@@ -96,7 +96,7 @@ export function Form() {
           }}
         />
         <ReCAPTCHA
-          sitekey="6Lfj9NYfAAAAAP8wPLtzrsSZeACIcGgwuEIRvbSg"
+          sitekey=""
           onChange={() => {
             setIsHuman(true);
           }}
