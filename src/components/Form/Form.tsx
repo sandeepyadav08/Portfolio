@@ -1,12 +1,10 @@
 import { Container, ContainerSucces } from './styles';
 import { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
-import ReCAPTCHA from 'react-google-recaptcha';
 import validator from 'validator';
 
 export function Form() {
   const [validEmail, setValidEmail] = useState(false);
-  const [isHuman, setIsHuman] = useState(false);
   const [message, setMessage] = useState('');
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -95,15 +93,9 @@ export function Form() {
             setMessage(e.target.value);
           }}
         />
-        <ReCAPTCHA
-          sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-          onChange={() => {
-            setIsHuman(true);
-          }}
-        />
         <button
           type="submit"
-          disabled={isSubmitting || !validEmail || !message || !isHuman}
+          disabled={isSubmitting || !validEmail || !message}
         >
           Submit
         </button>
