@@ -37,7 +37,7 @@ export function Project() {
               <div className="project-links">
                 <a href="https://github.com/sandeepyadav08/Portfolio" target="_blank" rel="noreferrer">
                   <img src={githubIcon} alt="Visit site" /> </a>
-                <a href="https://versal.in" target="_blank" rel="noreferrer">
+                <a href="https://sandeepyadav.vercel.app/" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" /></a>
               </div>
             </header>
