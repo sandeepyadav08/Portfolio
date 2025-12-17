@@ -15,7 +15,7 @@ export function Footer() {
       </a>
       <div>
         <p>
-          This Website was made with <img src={reactIcon} alt="React" />
+          © 2025-26 Sandeep Yadav. All rights reserved.
         </p>
       </div>
       <div className="social-media">
