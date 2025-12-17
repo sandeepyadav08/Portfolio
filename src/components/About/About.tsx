@@ -19,12 +19,12 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-          Hi there! I'm Sandeep Yadav, a Full Stack Developer and Cybersecurity Enthusiast dedicated to bridging technology and security for a safer digital world. I love creating efficient, scalable, and user-friendly websites using modern technologies while ensuring they are secure from potential threats.
+          Hi there! I'm Sandeep Yadav, a Full-stack & Mobile App Developer skilled in building scalable, user-centric applications using React, React Native, Node.js, and MySQL. Experienced in agile development environments with a strong focus on clean code, performance, and usability.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
           <p>
-          I believe that security should be an integral part of the development process, and I strive to implement best practices in every project. If you're looking for a developer who understands both the technical and security aspects of web development, I’d love to connect!</p>
+          Passionate about continuous learning and exploring AI and Machine Learning to leverage modern technologies and deliver high-quality digital solutions.</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
           <p>
