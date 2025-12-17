@@ -9,18 +9,12 @@ export function Form() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-
   function verifyEmail(email: string) {
     setValidEmail(validator.isEmail(email));
   }
-
-
-
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     setIsSubmitting(true);
-
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: {
@@ -60,14 +54,12 @@ export function Form() {
     setIsSubmitting(false);
   };
 
-
-
   return (
     <Container>
       <h2>Get in touch using the form</h2>
       <form onSubmit={handleSubmit}>
         <input
-          placeholder="Name"
+          placeholder="Enter your full name"
           id="name"
           type="text"
           name="name"
@@ -78,7 +70,7 @@ export function Form() {
           required
         />
         <input
-          placeholder="Email"
+          placeholder="Enter your email address"
           id="email"
           type="email"
           name="email"
