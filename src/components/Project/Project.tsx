@@ -138,7 +138,7 @@ export function Project() {
               </div>
             </header>
             <div className="body">
-              <h3>WeatherSense</h3>
+              <h3>IIM-Admission-Portal</h3>
               <p>A comprehensive admission management system for **PGP, PhD, EPhD, and EMBA programs**.
                 Features applicant workflows, fee tracking, scheduling, and real-time analytics. 
         Backend APIs built with Node.js and MySQL for secure and dynamic data handling.
