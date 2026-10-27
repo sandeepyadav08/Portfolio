@@ -46,7 +46,7 @@ export function Header() {
         <div
           aria-expanded={isActive ? 'true' : 'false'}
           aria-haspopup="true"
-          aria-label={isActive ? 'Fechar menu' : 'Abrir menu'}
+          aria-label={isActive ? 'Close menu' : 'Open menu'}
           className={isActive ? 'menu active' : 'menu'}
           onClick={() => {
             setActive(!isActive)
