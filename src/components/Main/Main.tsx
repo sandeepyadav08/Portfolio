@@ -5,14 +5,15 @@ import { About } from "../About/About";
 import { Contact } from "../Contact/Contact";
 import { Project } from "../Project/Project";
 import python from "../../assets/python.svg";
-import htmlIcon from "../../assets/html-icon.svg";
-import cssIcon from "../../assets/css-icon.svg";
-
 import jsIcon from "../../assets/js-icon.svg";
 import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import postman from "../../assets/postman.svg";
-import boostrapIcon from "../../assets/bootstrap-icon.svg";
+import typescriptIcon from "../../assets/typescript-icon.svg";
+import reactNativeIcon from "../../assets/react-native-icon.svg";
+import mysqlIcon from "../../assets/mysql-icon.svg";
+import gitIcon from "../../assets/git-icon.svg";
+import githubIcon from "../../assets/github.svg";
 
 export function Main() {
   return (
@@ -147,12 +148,32 @@ export function Main() {
               },
               "image": [
                 {
-                  "src": boostrapIcon,
+                  "src": jsIcon,
                   "width": 20,
                   "height": 20
                 },
                 {
-                  "src": cssIcon,
+                  "src": typescriptIcon,
+                  "width": 20,
+                  "height": 20
+                },
+                {
+                  "src": reactIcon,
+                  "width": 20,
+                  "height": 20
+                },
+                {
+                  "src": reactNativeIcon,
+                  "width": 20,
+                  "height": 20
+                },
+                {
+                  "src": nodeIcon,
+                  "width": 20,
+                  "height": 20
+                },
+                {
+                  "src": mysqlIcon,
                   "width": 20,
                   "height": 20
                 },
@@ -162,32 +183,20 @@ export function Main() {
                   "height": 20
                 },
                 {
-                  "src": htmlIcon,
+                  "src": gitIcon,
                   "width": 20,
                   "height": 20
                 },
                 {
-                  "src": jsIcon,
+                  "src": githubIcon,
                   "width": 20,
                   "height": 20
                 },
-               
-                {
-                  "src": nodeIcon,
-                  "width": 20,
-                  "height": 20
-                },
-                {
-                  "src": reactIcon,
-                  "width": 20,
-                  "height": 20
-                },
-                
                 {
                   "src": postman,
                   "width": 20,
                   "height": 20
-                },
+                }
               
               ],
               "polygon": {

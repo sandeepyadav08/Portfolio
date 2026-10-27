@@ -1,13 +1,15 @@
 import { Container } from "./styles";
 import sandeepyadav from "../../assets/sandeep.webp";
 import python from "../../assets/python.svg";
-import htmlIcon from "../../assets/html-icon.svg";
-import cssIcon from "../../assets/css-icon.svg";
 import jsIcon from "../../assets/js-icon.svg";
 import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import postman from "../../assets/postman.svg";
-import boostrapIcon from "../../assets/bootstrap-icon.svg";
+import typescriptIcon from "../../assets/typescript-icon.svg";
+import reactNativeIcon from "../../assets/react-native-icon.svg";
+import mysqlIcon from "../../assets/mysql-icon.svg";
+import gitIcon from "../../assets/git-icon.svg";
+import githubIcon from "../../assets/github.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 
 export function About() {
@@ -36,44 +38,62 @@ export function About() {
         <div className="hard-skills">
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.10 * 1000}>
-              <img src={python} alt="python" />
+              <img src={jsIcon} alt="" />
+              <span>JavaScript</span>
             </ScrollAnimation>
           </div>
-          
           <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.13 * 1000}>
-              <img src={reactIcon} alt="React" />
+            <ScrollAnimation animateIn="fadeInUp" delay={0.12 * 1000}>
+              <img src={typescriptIcon} alt="" />
+              <span>TypeScript</span>
             </ScrollAnimation>
           </div>
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.14 * 1000}>
-              <img src={postman} alt="postman" />
+              <img src={reactIcon} alt="" />
+              <span>React</span>
             </ScrollAnimation>
           </div>
-         
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.16 * 1000}>
-              <img src={nodeIcon} alt="Node" />
-            </ScrollAnimation>
-          </div>
-          <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.17 * 1000}>
-              <img src={htmlIcon} alt="Html" />
+              <img src={reactNativeIcon} alt="" />
+              <span>React Native</span>
             </ScrollAnimation>
           </div>
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.18 * 1000}>
-              <img src={cssIcon} alt="Css" />
+              <img src={nodeIcon} alt="" />
+              <span>Node.js</span>
             </ScrollAnimation>
           </div>
           <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.19 * 1000}>
-              <img src={boostrapIcon} alt="bootstrap" />
+            <ScrollAnimation animateIn="fadeInUp" delay={0.20 * 1000}>
+              <img src={mysqlIcon} alt="" />
+              <span>MySQL</span>
             </ScrollAnimation>
           </div>
           <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.19 * 1000}>
-              <img src={jsIcon} alt="JavaScript" />
+            <ScrollAnimation animateIn="fadeInUp" delay={0.22 * 1000}>
+              <img src={python} alt="" />
+              <span>Python</span>
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.24 * 1000}>
+              <img src={gitIcon} alt="" />
+              <span>Git</span>
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.26 * 1000}>
+              <img src={githubIcon} alt="" />
+              <span>GitHub</span>
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.28 * 1000}>
+              <img src={postman} alt="" />
+              <span>Postman</span>
             </ScrollAnimation>
           </div>
         </div>
