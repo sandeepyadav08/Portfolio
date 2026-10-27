@@ -15,22 +15,27 @@ export function Form() {
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     setIsSubmitting(true);
-    const response = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name: name,
-        email: email,
-        message: message,
-        access_key: '9f41289a-c462-413f-a1e3-6532c0c65141', // Replace with your Web3Forms email key
-      }),
-    });
+    let success = false;
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          message: message,
+          access_key: '9f41289a-c462-413f-a1e3-6532c0c65141', // Replace with your Web3Forms email key
+        }),
+      });
+      const data = await response.json();
+      success = data.success;
+    } catch {
+      // network error or invalid response: fall through to the error toast
+    }
 
-    const data = await response.json();
-
-    if (data.success) {
+    if (success) {
       toast.success('Thanks for getting in touch! Email successfully sent!', {
         position: toast.POSITION.BOTTOM_RIGHT,
         pauseOnFocusLoss: false,

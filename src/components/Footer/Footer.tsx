@@ -14,7 +14,7 @@ export function Footer() {
       </a>
       <div>
         <p>
-          © 2025-26 Sandeep Yadav. All rights reserved.
+          © {new Date().getFullYear()} Sandeep Yadav. All rights reserved.
         </p>
       </div>
       <div className="social-media">
