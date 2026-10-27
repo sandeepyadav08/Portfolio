@@ -41,6 +41,15 @@ export const GlobalStyle = createGlobalStyle`
         color: var(--black);
       }
 
+      .project{
+        transition: 0.5s;
+        background-color: #e0e0e0;
+        color: var(--black);
+        p a{
+          color: var(--black);
+        }
+      }
+
       form{
         input,textarea{
           transition: 0.5s;
