@@ -30,8 +30,7 @@ export const Container = styled.section`
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding-top:5rem;
-    padding-left:1rem;
+    padding-top:2rem;
 
     img,span{
       font-size: 3rem;
@@ -41,7 +40,8 @@ export const Container = styled.section`
 
 
   .button{
-    margin-top:5rem;
+    display: inline-block;
+    margin-top:0;
     padding: 1.4rem 6rem;
   }
 
